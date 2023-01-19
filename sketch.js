@@ -5,6 +5,7 @@ var jet1,jet2,jets=[],jet1_img,jet2_img
 var bg,allPlayers
 var bullet1Img,bullet2Img;
 var bulletGroup;
+var lifeImage;
 function preload(){
   bgimg=loadImage("spaceformbg.jpg")
   jet1_img=loadImage("ship1.png")
@@ -12,7 +13,7 @@ function preload(){
 bg=loadImage("spacebg.png")
 bullet1Img=loadImage("bullet1.png");
 bullet2Img=loadImage("bullet2.png");
-
+lifeImage = loadImage("life.png");
 }
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
